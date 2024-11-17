@@ -12,10 +12,13 @@
   <!-- FontAwesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!-- Custom Styles -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       line-height: 1.6;
     }
     .section {
@@ -29,8 +32,20 @@
       color: white;
     }
     .section h2 {
+      font-family: 'Playfair Display', serif;
       text-align: center;
       margin-bottom: 30px;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
     }
     .social-icons a {
       color: inherit;
@@ -41,12 +56,22 @@
     .social-icons a:hover {
       color: #007bff;
     }
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Wendy's Hosting</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -67,7 +92,7 @@
     <div class="container">
       <h1>Welcome to Wendy's Event Hosting</h1>
       <p class="lead">Your Multilingual Wedding & Event Host</p>
-      <a href="#about" class="btn btn-light mt-3">Learn More</a>
+      <a href="#about" class="btn btn-light mt-3 btn-custom">Learn More</a>
     </div>
   </header>
 
@@ -78,7 +103,7 @@
       <p class="text-center">
         Hi, I’m Wendy, a passionate event host fluent in Mandarin, Taiwanese Hokkien, English, and Korean. 
         I specialize in hosting weddings, baby celebrations, and corporate events with a personal touch 
-        and cultural understanding.
+        and cultural understanding. Let me bring energy, warmth, and professionalism to your event.
       </p>
     </div>
   </section>
@@ -89,19 +114,25 @@
       <h2>Services</h2>
       <div class="row text-center">
         <div class="col-md-4">
-          <i class="fas fa-wedding fa-3x text-primary"></i>
-          <h3>Wedding Hosting</h3>
-          <p>Banquets, traditional ceremonies, witness ceremonies, and wedding video editing.</p>
+          <div class="card p-4">
+            <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+            <h3>Wedding Hosting</h3>
+            <p>Banquets, traditional ceremonies, witness ceremonies, and wedding video editing to capture memories.</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <i class="fas fa-baby fa-3x text-primary"></i>
-          <h3>Baby Celebrations</h3>
-          <p>Gender reveals, 120-day parties, and 1st birthdays planned to perfection.</p>
+          <div class="card p-4">
+            <i class="fas fa-baby fa-3x text-primary mb-3"></i>
+            <h3>Baby Celebrations</h3>
+            <p>Gender reveals, 120-day parties, and 1st birthdays, all planned to perfection.</p>
+          </div>
         </div>
         <div class="col-md-4">
-          <i class="fas fa-briefcase fa-3x text-primary"></i>
-          <h3>Corporate Events</h3>
-          <p>Team-building activities, year-end parties, and opening ceremonies.</p>
+          <div class="card p-4">
+            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+            <h3>Corporate Events</h3>
+            <p>Team-building activities, year-end parties, opening ceremonies, and more.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -111,18 +142,18 @@
   <section id="contact" class="section-dark section">
     <div class="container text-center">
       <h2>Contact Me</h2>
-      <p>Email me at <a href="mailto:wendy@example.com" class="text-white">wendy@example.com</a></p>
+      <p>Email me at <a href="mailto:wendy@example.com" class="text-white">wendy@example.com</a> or follow me on social media:</p>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-center text-white py-3">
-    <p>&copy; 2024 Wendy's Hosting. All rights reserved.</p>
+  <footer class="bg-light text-center text-dark py-3">
+    <p>&copy; 2024 Wendy's Hosting. All rights reserved. Built with ❤️.</p>
   </footer>
 
   <!-- Bootstrap JS -->
